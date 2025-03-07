@@ -106,3 +106,78 @@ h3 {
     font-size: 0.85rem;
     border-top: 1px solid #ddd;
 }
+
+.site-footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.site-footer nav ul li a {
+    color: #007bff;
+    font-size: 0.9rem;
+}
+
+.site-footer nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* 問い合わせフォーム*/
+/* お問い合わせフォーム用スタイル */
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.required {
+    color: #dc3545;
+    margin-left: 5px;
+}
