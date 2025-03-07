@@ -23,7 +23,7 @@
   <body>
     <header class="site-header">
       <div class="container">
-        <h1><a href="/">IT記事サイト</a></h1>
+        <h1><a href="/">IT技術ブログ</a></h1>
       </div>
     </header>
 
@@ -41,8 +41,24 @@
           この記事では、WindowsPCしか持っていないけどmacOS環境を構築したい人向けに、「VMwareを使ったmacOS仮想化の手順（2025年版）」を詳しく解説します。iPhoneアプリの開発など、Macが必要な場面で役立ちます。
         </p>
 
+        <div
+          class="caution-box"
+          style="
+            border: 1px solid red;
+            padding: 10px;
+            background-color: #fff4f4;
+            margin: 16px 0;
+          "
+        >
+          <strong>⚠️重要な注意事項</strong><br />
+          本記事の内容は技術的な検証・学習を目的としています。<br />
+          Appleのソフトウェア使用許諾（EULA）では、**macOSはApple製ハードウェア上でのみ使用可能**と規定されています。
+          そのため、WindowsPC上でmacOSを動かすことは**ライセンス違反**となる可能性があります。
+          <br />実施する際は、この点を十分に理解し、**あくまで個人の責任**にて行ってください。
+        </div>
+
         <p>
-          <strong>PCスペック</strong><br />
+          <strong>実施PCスペック</strong><br />
           プロセッサ Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz 3.60 GHz<br />
           実装 RAM 16.0 GB<br />
           エディション Windows 11 Home
@@ -52,7 +68,7 @@
 
         <p>
           <img
-            src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2821619/9bfd0129-a0ed-640e-4819-0893ff2a127c.png"
+            src="../img/article1/VMware公式サイトのダウンロードページ画面.png"
             alt="VMware公式サイトのダウンロードページ画面"
           />
         </p>
@@ -66,7 +82,7 @@
 
         <p>
           <img
-            src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2821619/5d43dc26-428f-49e3-82b7-46b34646ffae.png"
+            src="../img/article1/VMwareのダウンロードリンクの選択画面.png"
             alt="VMwareのダウンロードリンクの選択画面"
           />
         </p>
@@ -74,7 +90,7 @@
 
         <p>
           <img
-            src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2821619/7f2df599-2886-94bc-e5d5-a5c70caac644.png"
+            src="../img/article1/VMware Workstation 16.2.4のWindows版ダウンロードボタン.png"
             alt="VMware Workstation 16.2.4のWindows版ダウンロードボタン"
           />
         </p>
@@ -89,7 +105,7 @@
 
         <p>
           <img
-            src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2821619/0b9734a7-1e73-f145-7430-89b90eb90413.png"
+            src="../img/article1/VMwareインストーラーの初期画面.png"
             alt="VMwareインストーラーの初期画面"
           />
         </p>
@@ -99,7 +115,7 @@
 
         <p>
           <img
-            src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2821619/8c36b220-347a-1d73-477d-7aabe22461bc.png"
+            src="../img/article1/VMwareインストールの使用許諾画面.png"
             alt="VMwareインストールの使用許諾画面"
           />
         </p>
@@ -107,7 +123,7 @@
 
         <p>
           <img
-            src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2821619/d49390b0-fbe0-e3a5-973a-4f90cee0fce0.png"
+            src="../img/article1/VMware拡張キーボードドライバのインストール選択画面.png"
             alt="VMware拡張キーボードドライバのインストール選択画面"
           />
         </p>
@@ -120,7 +136,7 @@
 
         <p>
           <img
-            src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2821619/575d25fe-4447-da7a-1310-175043027935.png"
+            src="../img/article1/VMwareインストール先選択画面.png"
             alt="VMwareインストール先選択画面"
           />
         </p>
@@ -128,7 +144,7 @@
 
         <p>
           <img
-            src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2821619/5b50faa6-f8ac-2b08-d8f0-1ae8e9603249.png"
+            src="../img/article1/VMwareのショートカット作成設定画面.png"
             alt="VMwareのショートカット作成設定画面"
           />
         </p>
@@ -136,7 +152,7 @@
 
         <p>
           <img
-            src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2821619/5ba8f80b-9656-6f03-0450-3643105043cd.png"
+            src="../img/article1/VMwareインストールの最終確認画面.png"
             alt="VMwareインストールの最終確認画面"
           />
         </p>
@@ -146,7 +162,7 @@
 
         <p>
           <img
-            src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2821619/fdceaae9-79ee-57df-3b9b-62298e1e00f8.png"
+            src="../img/article1/VMwareインストール完了画面.png"
             alt="VMwareインストール完了画面"
           />
         </p>
@@ -157,6 +173,9 @@
 
         <h2>次へ</h2>
         <p>
+          以上が、2025年最新の「WindowsPCでmacOSを構築する方法」です。VMwareを使えば、MacがなくてもiPhoneアプリ開発などが可能になります。ぜひチャレンジしてみてください。
+        </p>
+        <p>
           記事が長くなってしまうため、インストール完了まででこの記事は終わろうと思う。<br />
           VMwareでのmacOS環境構築については次の記事で投稿する。
         </p>
@@ -165,14 +184,14 @@
           続きの記事<br />
           <a
             href="https://qiita.com/mikazuki_mitsutsuki/items/00832106ac611da95e0d"
-            >https://qiita.com/mikazuki_mitsutsuki/items/00832106ac611da95e0d</a
+            >VMwareを使い、WindowsでmacOS環境を構築する(macOS仮想マシン作成)</a
           >
         </p>
 
         <h2>参考</h2>
         <p>
           <a href="https://qiita.com/qiita_mona/items/066d8f662409dd84c0d3"
-            >https://qiita.com/qiita_mona/items/066d8f662409dd84c0d3</a
+            >VMwareにWindows10をインストールする</a
           >
         </p>
       </article>

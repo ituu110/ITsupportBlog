@@ -188,3 +188,22 @@ img {
     height: auto;
     display: block;
 }
+
+.sns-share ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+.sns-share li {
+    display: inline;
+}
+.sns-share a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
