@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+body {
+    font-family: 'Noto Sans JP', Arial, sans-serif;
+    background-color: #f8f9fc;
+    color: #2c3e50;
+    line-height: 1.8;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* コンテナ */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ヘッダー */
+.site-header {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.site-header h1 a {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.site-header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.site-header nav a {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.site-header nav a:hover {
+    color: #cccccc;
+}
+
+/* メインコンテンツ */
+main {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #343a40;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    border-left: 5px solid #007bff;
+    padding-left: 10px;
+    margin: 25px 0 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+}
+
+.article-list {
+    list-style: none;
+}
+
+.article-list li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+/* フッター */
+.site-footer {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    background-color: #f8f9fa;
+    color: #666;
+    font-size: 0.85rem;
+    border-top: 1px solid #ddd;
+}
