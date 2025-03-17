@@ -9,7 +9,7 @@ function renderArticles() {
     // HTML生成
     articleList.innerHTML = articles.map(article => `
       <li>
-        <a href="${article.url}">
+        <a href="https://ituu110.github.io/ITsupportBlog/${article.url}">
           ${article.title}
         </a>
       </li>
