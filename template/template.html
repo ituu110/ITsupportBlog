@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{記事タイトル}}</title>
+  <meta name="description" content="{{記事の概要説明}}" />
+  <meta property="og:title" content="{{記事タイトル}}" />
+  <meta property="og:description" content="{{記事の要約}}" />
+  <meta property="og:url" content="{{記事URL}}" />
+  <meta property="og:image" content="{{サムネイル画像URL}}" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <!-- admax -->
+  <script src="https://adm.shinobi.jp/s/cee07f5da31ab8936f2b71ee3a9b4c0d"></script>
+  <!-- admax -->
+  <script defer src="../js/articles.js"></script>
+  <script defer src="../js/main.js"></script>
+</head>
+<body>
+
+    <header class="site-header">
+      <div class="container">
+        <h1><a href="/">IT技術ブログ</a></h1>
+      </div>
+    </header>
+
+
+
+
+  <main>
+
+    <h1>{{記事タイトル}}</h1>
+
+    <section>
+      <p>{{記事導入文}}</p>
+          </section>
+
+          <section>
+            <h2>記事内容</h2>
+            <p>{{記事内容}}</p>
+          </section>
+
+      <section>
+        <h2>まとめ</h2>
+        <p>{{記事のまとめ}}</p>
+      </section>
+
+      <section>
+        <h2>よくある質問</h2>
+        <details>
+          <summary>{{質問1}}</summary>
+          <p>{{回答1}}</p>
+        </details>
+        <details>
+          <summary>{{質問2}}</summary>
+          <p>{{回答2}}</p>
+        </details>
+        <!-- 必要に応じて質問を追加 -->
+      </section>
+
+      <section>
+        <h2>参考リンク</h2>
+        <ul>
+          <li><a href="{{参考リンクURL1}}">{{参考記事タイトル1}}</a></li>
+          <!-- 必要なリンクを追加 -->
+        </ul>
+      </section>
+
+      <div class="sns-share">
+        <h2>シェアする</h2>
+        <ul>
+          <li><a href="{{TwitterシェアURL}}">Twitterでシェア</a></li>
+          <li><a href="{{FacebookシェアURL}}">Facebookでシェア</a></li>
+          <li><a href="{{LINEシェアURL}}">LINEでシェア</a></li>
+        </ul>
+      </div>
+
+    </main>
+
+    <!-- admax -->
+    <script src="https://adm.shinobi.jp/s/941930aa19392419bd6693811a2d551f"></script>
+    <!-- admax -->
+
+    <footer class="site-footer">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="../index.html">ホーム</a></li>
+            <li><a href="../contact.html">お問い合わせ</a></li>
+            <li><a href="../privacy.html">プライバシーポリシー</a></li>
+          </ul>
+        </nav>
+        <p>&copy; 2025 IT技術ブログ</p>
+      </div>
+    </footer>
+
+    <script defer src="{{JSファイルURL}}"></script>
+
+  </main>
+
+</body>
+</html>
