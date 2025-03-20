@@ -8,12 +8,38 @@
   <meta property="og:description" content="{{記事の要約}}" />
   <meta property="og:url" content="{{記事URL}}" />
   <meta property="og:image" content="{{サムネイル画像URL}}" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "{{記事タイトル}}",
+      "description": "{{記事の概要説明}}",
+      "image": "{{サムネイル画像URL}}",
+      "author": {
+        "@type": "Person",
+        "name": "{{著者名}}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "IT技術ブログ",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ブログロゴ画像URL}}"
+        }
+      },
+      "datePublished": "{{公開日}}",
+      "dateModified": "{{更新日}}",
+      "mainEntityOfPage": "{{記事URL}}"
+    }
+    </script>    
+
   <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/articles.js"></script>
+  <script defer src="../js/main.js"></script>
   <!-- admax -->
   <script src="https://adm.shinobi.jp/s/cee07f5da31ab8936f2b71ee3a9b4c0d"></script>
   <!-- admax -->
-  <script defer src="../js/articles.js"></script>
-  <script defer src="../js/main.js"></script>
 </head>
 <body>
 
@@ -34,10 +60,11 @@
       <p>{{記事導入文}}</p>
           </section>
 
-          <section>
-            <h2>記事内容</h2>
-            <p>{{記事内容}}</p>
-          </section>
+          <h2>{{見出し1}}</h2>
+          <section>{{コンテンツ1}}</section>
+          
+          <h2>{{見出し2}}</h2>
+          <section>{{コンテンツ2}}</section>          
 
       <section>
         <h2>まとめ</h2>
