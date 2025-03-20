@@ -10,7 +10,7 @@ const articles = [
       url: "articles/cloud-service-selection.html",
       description: "クラウドサービス初心者が簡単に理解できる、個人や小規模チームに最適なサービス選びを徹底解説します。おすすめサービスの特徴や選定ポイントを詳しくご紹介！",
       date: "2025-03-17"
-    }
+    },
     {
       title: "IPAシステムアーキテクト試験とは？特徴・勉強法・近年の傾向を徹底解説",
       url: "articles/ipa-system-architect.html",
